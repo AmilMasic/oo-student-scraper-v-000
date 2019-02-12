@@ -14,7 +14,7 @@ class Student
     # @profile_quote = profile_quote
     # @bio = bio
     # @profile_url = profile_url
-    binding.pru
+    binding.pry
      student_hash
   end
 
