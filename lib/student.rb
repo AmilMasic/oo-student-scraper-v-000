@@ -5,19 +5,20 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    @name = name
-    @location = location
-    @twitter = twitter
-    @linkedin = linkedin
-    @github = github
-    @blog = blog
-    @profile_quote = profile_quote
-    @bio = bio
-    @profile_url = profile_url
+    # @name = name
+    # @location = location
+    # @twitter = twitter
+    # @linkedin = linkedin
+    # @github = github
+    # @blog = blog
+    # @profile_quote = profile_quote
+    # @bio = bio
+    # @profile_url = profile_url
+    puts student_hash
   end
 
   def self.create_from_collection(students_array)
-
+    
   end
 
   def add_student_attributes(attributes_hash)
