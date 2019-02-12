@@ -35,7 +35,7 @@ class Scraper
     student = {}
     # student[:profile_quote] = doc.css(".profile_quote").text
     # student[:bio] = doc.css("div.description-holder p").text
-    social_media = doc.css("social-icon-container a").collect do |icon|
+    social_media = doc.css(".social-icon-container a").collect do |icon|
       icon.attribute("href").value
     end
     social_media.each do |link|
