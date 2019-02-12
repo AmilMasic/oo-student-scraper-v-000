@@ -15,7 +15,7 @@ class Student
     # @profile_quote = profile_quote
     # @bio = bio
     # @profile_url = profile_url
-    # binding.pry
+    binding.pry
      @name = student_hash[:name]
      @location = student_hash[:location]
      # self.all
