@@ -18,7 +18,7 @@ class Student
     # binding.pry
      @name = student_hash[:name]
      @location = student_hash[:location]
-     @all << self.name
+     self.all << self
   end
 
   def self.create_from_collection(students_array)
