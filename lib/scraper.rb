@@ -37,7 +37,7 @@ class Scraper
     # student[:bio] = doc.css("div.description-holder p").text
     social_media = doc.css(".social-icon-container a").collect do |icon|
       icon.attribute("href").value
-    end
+
     social_media.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
@@ -48,6 +48,7 @@ class Scraper
       elsif link.include?(".com")
         student[:blog] = link
       end
+    end
     end
     student[:profile_quote] = doc.css(".profile_quote").text
     student[:bio] = doc.css("div.description-holder p").text
